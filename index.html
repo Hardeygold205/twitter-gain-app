@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Gain Web App</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="x-icon" href="Excelblue.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/c309dedf53.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark px-4 fixed-top border-bottom  header" data-bs-theme="light">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bolder " href="#">X-Gain</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <div class="navbar-nav m-auto w-75">
+                    <input class="form-control" type="search" placeholder="Search for profile" aria-label="Search">
+                </div>
+                <div class="d-sm-block d-flex d-none ms-auto">
+                    <div class="d-flex">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
+                            <label class="form-check-label" for="mySwitch"></label>
+                        </div>
+                        <i class="fa-brands fa-github text-light fs-3 mx-2 "></i>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </nav>
+    
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <nav id="sidebar" class="col-lg-2 d-none d-lg-block bg-dark border-end pt-4">
+                <ul class="row position-fixed w-25 fs-6">
+                    <div>
+                        <a class="mb-5 fs-1 text-light" href="https://twitter.com/home"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <div class="my-4">
+                        <li>
+                            <a class="text-light text-decoration-none" href="https://twitter.com/home"><i class="fa-solid fa-house me-2"></i>Home</a>
+                        </li>
+                    </div>
+                    <div class="mb-4">
+                        <li>
+                            <a class="text-light text-decoration-none" href="https://twitter.com/explore"><i class="fa-solid fa-magnifying-glass me-2"></i>Explore</a>
+                        </li>
+                    </div>
+                    <div class="mb-4">
+                        <li>
+                            <a class="text-light text-decoration-none" href="https://twitter.com/notifications"><i class="fa-solid fa-bell me-2"></i>Notification</a>
+                        </li>
+                    </div>
+                    <div class="mb-4">
+                        <li>
+                            <a class="text-light text-decoration-none" href="https://twitter.com/messages"><i class="fa-solid fa-envelope me-2"></i>Messages</a>
+                        </li>
+                    </div>
+                    <div class="mb-4">
+                        <li>
+                            <a class="text-light text-decoration-none" href="https://twitter.com/Hardeymorlah10/communities"><i class="fa-solid fa-user-group me-2"></i>Communities</a>
+                        </li>
+                    </div>
+                    <div class="mb-4">
+                        <li>
+                            <a class="text-light text-decoration-none" href="https://twitter.com/Hardeymorlah10"><i class="fa-solid fa-user me-2"></i>Profile</a>
+                        </li>
+                    </div>
+                    <div class="mb-4">
+                        <li>
+                            <a class="text-light text-decoration-none" href="#"><i class="fa-solid fa-angles-right me-2"></i>More</a>
+                        </li>
+                    </div>
+                    <div class="">
+                        <li>
+                            <a class="text-light text-decoration-none" href="https://twitter.com/i/verified-choose"><i class="fa-solid fa-check me-2"></i>Verified</a>
+                        </li>
+                    </div>
+                    <!--<a class="btn btn-primary" href="https://twitter.com/compose/tweet" type="button">Post</a>
+                    <div class="row">
+                        <div class="d-flex">
+                            <img class="rounded  rounded-circle " src="WRZz0Iv1_400x400.jpg" alt="" height="50">
+                            <div class="fw-bold text-light">
+                                <h5>Hadi Ademola</h5>
+                                <p class="">@Hardeymorlah10</p>
+                            </div>
+                        </div>
+                    </div>-->
+                </ul>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+            <div id="main" class="col-lg-10 bg-dark">
+                <div class="row gap-5 p-5">
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="WRZz0Iv1_400x400.jpg" alt="user-pics" height="100">
+                        <h3 class="text-center mx-auto text-light">BodaAde</h3>
+                        <p class="text-center text-light">@Hardeymorlah10</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                    <div class="col rounded p-3">
+                        <img class="rounded rounded-circle d-block mx-auto  mb-3 " src="profile-icon-9.png" alt="user-pics" height="100">
+                        <h2 class="text-center mx-auto text-light">FullName</h2>
+                        <p class="text-center text-light">@username</p>
+                        <a class="btn btn-primary d-block " href="https://twitter.com/hardeymorlah10" target="_blank">Follow</a>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+    <div class="footer border-top ">
+        <section class="container-fluid text-light p-5">
+            <div class="row gap-5 ">
+                <div class="col-md-5">
+                    <h3 class="custom-underline">Contact Us</h3>
+                    <div class="d-grid pt-3 ">
+                        <a class=" text-decoration-none text-light" href="mail.to:hardeygold11@gmail.com">Email:hardeygold11gmail.com</a>
+                        <a class=" text-decoration-none text-light" href="tell:+2348138553465" >Phone: +234-813-855-3465</a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <h3>Follow Us</h3>
+                    <div class="fs-1 pt-3 me-3">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-square-x-twitter"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <a href="https://linkedin/in/hardeygold205"><i class="fa-brands fa-linkedin"></i></a>
+                        <i class="fa-brands fa-square-github"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        // JavaScript to handle sidebar toggle
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('show');
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
