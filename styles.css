@@ -61,9 +61,12 @@ body {
     left: -50%;
     top: 0;
     bottom: 0;
-    display: block;
     border-right: 2px solid ;
     transition: .5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 .sidebar.show {
     left: 0;
