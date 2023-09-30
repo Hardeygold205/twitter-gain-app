@@ -58,13 +58,15 @@ body {
     z-index: 10000;
     background-color: #242937;
     color: #fff;
-    left: 0;
+    left: -50%;
     top: 0;
     bottom: 0;
-    display: none;
+    display: block;
+    border-right: 2px solid ;
+    transition: .5s ease;
 }
 .sidebar.show {
-    display: block;
+    left: 0;
 }
 .sidebar li {
     list-style: none;
