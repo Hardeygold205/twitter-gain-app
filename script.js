@@ -9,3 +9,10 @@ Dark.addEventListener('click', () => {
 Light.addEventListener('click', () => {
     Body.classList.remove("darkmode")
 });
+
+const Hamburger = document.getElementById("menu");
+const SideMenu = document.getElementById("sidebar");
+
+Hamburger.addEventListener('click', () => {
+    SideMenu.classList.toggle("show")
+});

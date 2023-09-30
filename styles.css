@@ -50,3 +50,24 @@ body {
     transform: scale(1.05);
 }
 
+.sidebar {
+    border-radius: 0px 10px 10px 0px;
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    z-index: 10000;
+    background-color: #242937;
+    color: #fff;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+}
+.sidebar.show {
+    display: block;
+}
+.sidebar li {
+    list-style: none;
+}
+
+

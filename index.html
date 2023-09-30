@@ -13,31 +13,82 @@
     <script src="https://kit.fontawesome.com/c309dedf53.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar-nav navbar-dark px-md-4 px-0 py-2 fixed-top border-bottom header" data-bs-theme="light">
-        <div class="container-fluid d-flex">
+    <nav class="navbar navbar-expand-sm navbar-dark px-md-4 px-0 fixed-top border-bottom header" data-bs-theme="light">
+        <div class="container-fluid">
             <a class="navbar-brand fw-bolder" href="#">X-Gain</a>
-            <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-            </button> -->
-            <div class="d-flex w-100">
-                <div class="input-group me-3 px-md-5 px-0 ">
-                    <input class="form-control form-control-sm " type="search" placeholder="Search for profile" aria-label="Search">
-                    <button class="btn btn-primary" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                </div>
-                <div class="d-flex align-items-center ">
-                    <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
-                        <label class="form-check-label" for="mySwitch"></label>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav d-block w-100 px-3">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="Search for profile" aria-label="Search">
+                        <button class="btn btn-primary" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                     </div>
-                    <i class="fa-brands fa-github text-light fs-3 mx-2 "></i>
+
+                </ul>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
+                    <label class="form-check-label" for="mySwitch"></label>
+                </div>
+                <i class="fa-brands fa-github text-light fs-3 mx-2 "></i>
+                <div>
+                    <button id="menu" class="navbar-toggler d-lg-none d-block" type="button">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 </div>
             </div>
         </div>
     </nav>
-    
+    <div id="sidebar" class="sidebar">
+        <ul id="sidebar" class="fs-6">
+            <div>
+                <a class="mb-5 fs-1 text-light" href="https://twitter.com/home"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <div class="my-4">
+                <li>
+                    <a class="text-light text-decoration-none" href="https://twitter.com/home"><i class="fa-solid fa-house me-2"></i>Home</a>
+                </li>
+            </div>
+            <div class="mb-4">
+                <li>
+                    <a class="text-light text-decoration-none" href="https://twitter.com/explore"><i class="fa-solid fa-magnifying-glass me-2"></i>Explore</a>
+                </li>
+            </div>
+            <div class="mb-4">
+                <li>
+                    <a class="text-light text-decoration-none" href="https://twitter.com/notifications"><i class="fa-solid fa-bell me-2"></i>Notification</a>
+                </li>
+            </div>
+            <div class="mb-4">
+                <li>
+                    <a class="text-light text-decoration-none" href="https://twitter.com/messages"><i class="fa-solid fa-envelope me-2"></i>Messages</a>
+                </li>
+            </div>
+            <div class="mb-4">
+                <li>
+                    <a class="text-light text-decoration-none" href="https://twitter.com/Hardeymorlah10/communities"><i class="fa-solid fa-user-group me-2"></i>Communities</a>
+                </li>
+            </div>
+            <div class="mb-4">
+                <li>
+                    <a class="text-light text-decoration-none" href="https://twitter.com/Hardeymorlah10"><i class="fa-solid fa-user me-2"></i>Profile</a>
+                </li>
+            </div>
+            <div class="mb-4">
+                <li>
+                    <a class="text-light text-decoration-none" href="#"><i class="fa-solid fa-angles-right me-2"></i>More</a>
+                </li>
+            </div>
+            <div class="">
+                <li>
+                    <a class="text-light text-decoration-none" href="https://twitter.com/i/verified-choose"><i class="fa-solid fa-check me-2"></i>Verified</a>
+                </li>
+            </div>
+        </ul>
+    </div>
     <div class="container-fluid pt-5 ">
         <div class="row">
-            <nav id="sidebar" class="col-lg-2 d-none d-lg-block bg-dark border-end pt-4">
+            <nav id="sidebar" class="col-lg-2 d-none d-lg-block bg-dark border-end pt-4 collapse">
                 <ul class="row position-fixed w-25 fs-6">
                     <div>
                         <a class="mb-5 fs-1 text-light" href="https://twitter.com/home"><i class="fa-brands fa-x-twitter"></i></a>
@@ -82,20 +133,7 @@
                             <a class="text-light text-decoration-none" href="https://twitter.com/i/verified-choose"><i class="fa-solid fa-check me-2"></i>Verified</a>
                         </li>
                     </div>
-                    <!--<a class="btn btn-primary" href="https://twitter.com/compose/tweet" type="button">Post</a>
-                    <div class="row">
-                        <div class="d-flex">
-                            <img class="rounded  rounded-circle " src="WRZz0Iv1_400x400.jpg" alt="" height="50">
-                            <div class="fw-bold text-light">
-                                <h5>Hadi Ademola</h5>
-                                <p class="">@Hardeymorlah10</p>
-                            </div>
-                        </div>
-                    </div>-->
                 </ul>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
             </nav>
             <div id="main" class="col-lg-10 bg-dark">
                 <div class="row gap-5 p-5">
